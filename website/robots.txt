@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://voniweb.com/sitemap.xml
