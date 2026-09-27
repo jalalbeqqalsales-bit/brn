@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Placeholder for a BRN job photo. Replace the <img> src with a real photo. -->
+  <defs>
+    <pattern id="h" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V22" stroke="#4d4036" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#463a30"/>
+  <rect width="800" height="600" fill="url(#h)"/>
+  <path d="M0 402L800 418" stroke="#e0a526" stroke-width="5" stroke-opacity=".7"/>
+  <g transform="translate(400 0)">
+    <rect x="-5" y="330" width="10" height="100" fill="#caa475" fill-opacity=".8"/>
+    <path d="M5 338c14-3 24 3 38-2l-6 10 8 8c-13 3-26-3-40 0z" fill="#ef6a2a" fill-opacity=".8"/>
+  </g>
+</svg>

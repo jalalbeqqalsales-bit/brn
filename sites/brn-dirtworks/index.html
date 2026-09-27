@@ -1,0 +1,427 @@
+<!doctype html>
+<!--
+  BRN Dirtworks LTD — homepage.
+  "is-preview" flags every element marked data-confirm (content BRN has not
+  confirmed yet). Confirm or delete each one, then run tools/check-launch.mjs.
+  See README.md for the launch checklist.
+-->
+<html lang="en-CA" class="is-preview">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BRN Dirtworks LTD | Dirt Work &amp; Construction in Lac La Biche, AB</title>
+  <meta name="description" content="BRN Dirtworks LTD is a construction company based in Lac La Biche, Alberta. Call 780-689-0758 or request a quote online. Open Mon–Fri 7am–7pm, Sat 7am–noon.">
+  <!-- Preview builds must not be indexed. Remove at launch (check-launch enforces it). -->
+  <meta name="robots" content="noindex">
+  <!-- Add at launch once the domain is known:
+  <link rel="canonical" href="https://YOUR-DOMAIN/">
+  <meta property="og:url" content="https://YOUR-DOMAIN/">
+  <meta property="og:image" content="https://YOUR-DOMAIN/assets/img/og.jpg">
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:site_name" content="BRN Dirtworks LTD">
+  <meta property="og:title" content="BRN Dirtworks LTD | Dirt Work &amp; Construction in Lac La Biche">
+  <meta property="og:description" content="Local construction company in Lac La Biche, Alberta. Call 780-689-0758 or request a quote online.">
+  <meta name="theme-color" content="#1F1C19">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('can-reveal');
+    })(document.documentElement);
+  </script>
+  <script src="assets/js/site.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "BRN Dirtworks LTD",
+    "telephone": "+1-780-689-0758",
+    "email": "brnnash11@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "67033 Range Rd 142 #108",
+      "addressLocality": "Lac La Biche",
+      "addressRegion": "AB",
+      "postalCode": "T0A 2C0",
+      "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "07:00",
+        "closes": "12:00"
+      }
+    ],
+    "sameAs": ["https://www.facebook.com/61555155162397/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <aside class="preview-bar" aria-label="Preview notice">
+    <strong>Preview build.</strong> Items with a dashed outline haven’t been confirmed by BRN yet. Confirm or remove them before launch.
+  </aside>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="BRN Dirtworks LTD, back to top">
+        <span class="brand__mark" aria-hidden="true">BRN</span>
+        <span class="brand__name" aria-hidden="true">Dirtworks <span>LTD</span></span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-btn>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="square"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+        <span>Menu</span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#quote">Contact</a></li>
+        </ul>
+        <a class="nav__phone" href="tel:+17806890758">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+          780-689-0758
+        </a>
+        <a class="btn btn--signal nav__cta" href="#quote">Request a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Hero: what, where, what to do next -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="hero__place">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            Lac La Biche, Alberta
+          </p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span style="--i:0">Dirt work &amp;</span></span>
+            <span class="line"><span style="--i:1">construction in</span></span>
+            <span class="line"><span style="--i:2">Lac La Biche</span></span>
+          </h1>
+          <p class="hero__lede">BRN Dirtworks LTD is a local construction company. Send your job details for a quote, or call to talk it through.</p>
+
+          <div class="hero__actions" data-hero-actions>
+            <a class="btn btn--signal btn--lg" href="#quote">Request a quote</a>
+            <a class="btn btn--line btn--lg" href="tel:+17806890758">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+              Call 780-689-0758
+            </a>
+          </div>
+
+          <ul class="hero__facts">
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=BRN%20Dirtworks%20LTD%2C%20Lac%20La%20Biche%2C%20AB" target="_blank" rel="noopener">5.0 on Google<span class="sr-only"> (opens in a new tab)</span></a>
+              <span>from 2 reviews</span>
+            </li>
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span data-open-status>Mon–Fri 7 am–7 pm, Sat 7 am–noon</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- IMAGE: replace with a BRN job photo (hero.jpg, ~1600×2000, 4:5). Update alt text to describe the job. -->
+        <figure class="hero__media" data-confirm="Temporary drawing: replace with a BRN job photo">
+          <img src="assets/img/hero-temp.svg" width="800" height="1000" alt="" decoding="async" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Services. Every entry is unconfirmed: BRN's public listings don't name specific services. -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="wrap services__grid">
+        <div class="section-head">
+          <h2 id="services-title">Services</h2>
+          <p>Not sure if your job is a fit? Call <a class="link" href="tel:+17806890758">780-689-0758</a> and ask.</p>
+          <a class="btn btn--dark" href="#quote">Request a quote</a>
+        </div>
+
+        <ul class="svc-list">
+          <li class="svc" data-confirm="Confirm BRN offers this">
+            <h3 class="svc__title">Excavation</h3>
+            <div class="svc__body">
+              <p>Digging for basements, foundations, footings and utility lines.</p>
+              <p class="svc__for">Typical jobs: new homes, shops, garages, additions.</p>
+            </div>
+          </li>
+          <li class="svc" data-confirm="Confirm BRN offers this">
+            <h3 class="svc__title">Site preparation</h3>
+            <div class="svc__body">
+              <p>Stripping topsoil and building a level, compacted pad that’s ready to build on.</p>
+              <p class="svc__for">Typical jobs: house pads, shop pads, garage slabs.</p>
+            </div>
+          </li>
+          <li class="svc" data-confirm="Confirm BRN offers this">
+            <h3 class="svc__title">Grading and drainage</h3>
+            <div class="svc__body">
+              <p>Shaping the ground so water runs away from buildings instead of pooling beside them.</p>
+              <p class="svc__for">Typical jobs: wet yards, new builds, landscaping prep.</p>
+            </div>
+          </li>
+          <li class="svc" data-confirm="Confirm BRN offers this">
+            <h3 class="svc__title">Gravel driveways and yards</h3>
+            <div class="svc__body">
+              <p>Building up and gravelling driveways, parking areas and yard sites that hold up through spring thaw.</p>
+              <p class="svc__for">Typical jobs: acreage driveways, shop yards, parking lots.</p>
+            </div>
+          </li>
+          <li class="svc" data-confirm="Confirm BRN offers this">
+            <h3 class="svc__title">Trenching and backfill</h3>
+            <div class="svc__body">
+              <p>Trenches for water, sewer and power lines, backfilled and packed when the line is in.</p>
+              <p class="svc__for">Typical jobs: service connections, line repairs.</p>
+            </div>
+          </li>
+          <li class="svc" data-confirm="Confirm BRN offers this">
+            <h3 class="svc__title">Land clearing</h3>
+            <div class="svc__body">
+              <p>Clearing brush and trees to open up building sites, fence lines and access roads.</p>
+              <p class="svc__for">Typical jobs: new lots, fence lines, lease and access roads.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Proof: job photos + the public Google rating + Facebook -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="work-title">Recent work</h2>
+          <p>Photos from BRN job sites, and where to see more.</p>
+        </div>
+
+        <div class="work__grid">
+          <!-- IMAGES: swap each placeholder for a real job photo and write a caption that says what was done and where. -->
+          <figure class="shot shot--lead" data-reveal data-confirm="Placeholder: add a BRN job photo">
+            <div class="shot__frame"><img src="assets/img/photo-placeholder.svg" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
+            <figcaption>Job photo: what was done and where</figcaption>
+          </figure>
+          <figure class="shot shot--b" data-reveal data-confirm="Placeholder: add a BRN job photo">
+            <div class="shot__frame"><img src="assets/img/photo-placeholder.svg" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
+            <figcaption>Job photo: what was done and where</figcaption>
+          </figure>
+
+          <aside class="proof" aria-labelledby="proof-title">
+            <div class="proof__rating">
+              <h3 class="proof__title" id="proof-title">Rated 5.0 on Google</h3>
+              <p class="proof__stars" role="img" aria-label="5 out of 5 stars">
+                <svg aria-hidden="true" viewBox="0 0 120 24" fill="currentColor"><path id="st" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/><use href="#st" x="24"/><use href="#st" x="48"/><use href="#st" x="72"/><use href="#st" x="96"/></svg>
+              </p>
+              <p>From 2 reviews on BRN Dirtworks’ Google listing.</p>
+              <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=BRN%20Dirtworks%20LTD%2C%20Lac%20La%20Biche%2C%20AB" target="_blank" rel="noopener">Read the reviews on Google<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <div class="proof__social">
+              <p>BRN posts updates and photos on Facebook.</p>
+              <a class="link" href="https://www.facebook.com/61555155162397/" target="_blank" rel="noopener">See BRN on Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </aside>
+
+          <figure class="shot shot--c" data-reveal data-confirm="Placeholder: add a BRN job photo">
+            <div class="shot__frame"><img src="assets/img/photo-placeholder.svg" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
+            <figcaption>Job photo: what was done and where</figcaption>
+          </figure>
+          <figure class="shot shot--d" data-reveal data-confirm="Placeholder: add a BRN job photo">
+            <div class="shot__frame"><img src="assets/img/photo-placeholder.svg" width="800" height="600" alt="" loading="lazy" decoding="async"></div>
+            <figcaption>Job photo: what was done and where</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Quote: what happens next, direct contact, short form -->
+    <section class="section quote" id="quote" aria-labelledby="quote-title">
+      <div class="wrap quote__grid">
+        <div class="quote__intro">
+          <h2 id="quote-title">Request a quote</h2>
+          <ol class="steps">
+            <li><p><strong>Tell BRN about the job.</strong> Use the form, or call <a class="link" href="tel:+17806890758">780-689-0758</a>.</p></li>
+            <li><p><strong>BRN follows up</strong> to go over the details with you.</p></li>
+            <li><p><strong>You get a quote</strong> for the work.</p></li>
+          </ol>
+        </div>
+
+        <!--
+          Without data-endpoint, the form opens the visitor's email app with the
+          request filled in (and falls back to a plain mailto post without JS).
+          Set data-endpoint to a form service URL (Formspree, Basin, etc.) to
+          send requests directly. See README.
+        -->
+        <form class="qform" id="quote-form" action="mailto:brnnash11@gmail.com" method="post" enctype="text/plain" data-endpoint="" novalidate>
+          <fieldset>
+            <legend>The job</legend>
+
+            <div class="field" data-confirm="Options mirror the unconfirmed services">
+              <label for="f-type">Project type</label>
+              <select class="input" id="f-type" name="Project type">
+                <option value="">Choose one</option>
+                <option>Excavation</option>
+                <option>Site preparation</option>
+                <option>Grading and drainage</option>
+                <option>Gravel driveway or yard</option>
+                <option>Trenching and backfill</option>
+                <option>Land clearing</option>
+                <option>Something else or not sure</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-address">Project address</label>
+              <input class="input" id="f-address" name="Project address" type="text" autocomplete="address-line1" aria-describedby="f-address-hint">
+              <p class="hint" id="f-address-hint">Street address or legal land description, like <span class="nowrap">NE-12-67-14-W4</span>.</p>
+            </div>
+
+            <div class="field">
+              <label for="f-size">Approximate size</label>
+              <input class="input" id="f-size" name="Approximate size" type="text" aria-describedby="f-size-hint">
+              <p class="hint" id="f-size-hint">A rough idea is fine, like a 30 × 40 ft pad or a 150 ft driveway.</p>
+            </div>
+
+            <div class="field">
+              <label for="f-details">What needs doing?</label>
+              <textarea class="input" id="f-details" name="Project details" rows="4" aria-describedby="f-details-hint"></textarea>
+              <p class="hint" id="f-details-hint">Ground conditions, access, timing — anything BRN should know.</p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your details</legend>
+
+            <div class="field">
+              <label for="f-name">Name <span class="req">(required)</span></label>
+              <input class="input" id="f-name" name="Name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err" hidden></p>
+            </div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="f-phone">Phone <span class="req">(required)</span></label>
+                <input class="input" id="f-phone" name="Phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="f-phone-err">
+                <p class="field__error" id="f-phone-err" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input class="input" id="f-email" name="Email" type="email" autocomplete="email" aria-describedby="f-email-err">
+                <p class="field__error" id="f-email-err" hidden></p>
+              </div>
+            </div>
+
+            <fieldset class="field choice-group">
+              <legend class="label">Best way to reach you</legend>
+              <div class="choice">
+                <label><input type="radio" name="Preferred contact" value="Call" checked><span>Call</span></label>
+                <label><input type="radio" name="Preferred contact" value="Text"><span>Text</span></label>
+                <label><input type="radio" name="Preferred contact" value="Email"><span>Email</span></label>
+              </div>
+            </fieldset>
+          </fieldset>
+
+          <!-- Spam trap: bots fill this, people never see it. -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-hp">Leave this empty</label>
+            <input id="f-hp" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-status" data-form-status role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+          <div class="qform__submit">
+            <button class="btn btn--signal btn--lg btn--block" type="submit">Request a quote</button>
+            <p>Prefer to talk? Call <a class="link" href="tel:+17806890758">780-689-0758</a>.</p>
+          </div>
+        </form>
+
+        <div class="quote__contact">
+          <h3 class="sr-only">Contact details</h3>
+          <dl class="contact">
+            <div>
+              <dt>Phone</dt>
+              <dd><a class="contact__phone" href="tel:+17806890758">780-689-0758</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a class="link" href="mailto:brnnash11@gmail.com">brnnash11@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>
+                <table class="hours">
+                  <caption class="sr-only">Business hours</caption>
+                  <tbody>
+                    <tr data-days="1 2 3 4 5"><th scope="row">Monday to Friday</th><td>7 am – 7 pm</td></tr>
+                    <tr data-days="6"><th scope="row">Saturday</th><td>7 am – noon</td></tr>
+                    <tr data-days="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+                  </tbody>
+                </table>
+                <p class="open-status" data-open-status hidden></p>
+              </dd>
+            </div>
+            <div>
+              <dt>Shop</dt>
+              <dd>
+                <address>67033 Range Rd 142 #108<br>Lac La Biche, AB T0A 2C0</address>
+                <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=BRN%20Dirtworks%20LTD%2C%2067033%20Range%20Rd%20142%2C%20Lac%20La%20Biche%2C%20AB%20T0A%202C0" target="_blank" rel="noopener">Get directions<span class="sr-only"> (opens in a new tab)</span></a>
+              </dd>
+            </div>
+            <div data-confirm="Confirm service area">
+              <dt>Service area</dt>
+              <dd>Lac La Biche and the surrounding county. Somewhere else? Call and ask.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="brand brand--footer" aria-hidden="true"><span class="brand__mark">BRN</span><span class="brand__name">Dirtworks <span>LTD</span></span></p>
+        <p class="footer__line">Dirt work and construction in Lac La Biche, Alberta.</p>
+      </div>
+      <div>
+        <h2 class="footer__h">Contact</h2>
+        <p><a href="tel:+17806890758">780-689-0758</a><br><a href="mailto:brnnash11@gmail.com">brnnash11@gmail.com</a></p>
+        <address>67033 Range Rd 142 #108<br>Lac La Biche, AB T0A 2C0</address>
+      </div>
+      <div>
+        <h2 class="footer__h">Hours</h2>
+        <p>Mon–Fri 7 am – 7 pm<br>Sat 7 am – noon<br>Sun closed</p>
+        <p><a href="https://www.facebook.com/61555155162397/" target="_blank" rel="noopener">BRN on Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <p>© <span data-year>2026</span> BRN Dirtworks LTD</p>
+    </div>
+  </footer>
+
+  <!-- Mobile action bar -->
+  <div class="mbar" data-mbar>
+    <a class="btn btn--line mbar__call" href="tel:+17806890758">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+      <span>Call<span class="mbar__num"> 780-689-0758</span></span>
+    </a>
+    <a class="btn btn--signal mbar__quote" href="#quote">Get a quote</a>
+  </div>
+</body>
+</html>

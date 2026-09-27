@@ -114,6 +114,14 @@ and logs that all accounts are at capacity.
   (`domain,niche,contact_name,contact_email`)
 - `npm run reset-db` — wipe all campaign data, keep schema
 
+## Client sites
+
+`/sites` holds static client websites that are independent of the engine
+(not served by it, no build step). Each has its own README.
+
+- `sites/brn-dirtworks/`: BRN Dirtworks LTD, Lac La Biche, AB (preview build;
+  run `node sites/brn-dirtworks/tools/check-launch.mjs` for launch blockers)
+
 ## Notes & responsible use
 
 - This engine sends real emails to real inboxes. Respect CAN-SPAM/GDPR: use
