@@ -16,15 +16,23 @@ tools/check-launch.mjs     launch gate: fails while anything unconfirmed remains
 Preview locally: `python3 -m http.server -d sites/brn-dirtworks 8080`, then open
 http://localhost:8080.
 
-## Current state: preview build
+## Current state: sales demo
 
-The page ships with `class="is-preview"` on `<html>` and a `noindex` robots tag.
-Every element whose content BRN has not confirmed carries a `data-confirm`
-attribute. In preview it shows a dashed outline and a label. Nothing marked this
-way should go live as-is.
+This is a finished-looking demo to show BRN's owner. It's live at
+https://poooe9-svg.github.io/email/sites/brn-dirtworks/ once GitHub Pages is on.
 
-`node tools/check-launch.mjs` lists every blocker and exits non-zero until the
-page is ready.
+- **Photos** in `assets/img/demo/` are Adobe Stock images licensed free of charge
+  through the Adobe account used to build this. They show the kind of work, not
+  BRN's own jobs.
+- **Demo content** (the six services, "Why call BRN" points, service-area towns,
+  gallery captions) is written to be plausible for a Lac La Biche dirt work
+  company, and every piece is marked `data-confirm` in the HTML.
+- **Real facts** (name, phone, email, shop address, hours, Google 5.0 from 2
+  reviews, Facebook page) are unchanged and verified.
+- The page carries `noindex`, so it won't show up in Google while it's a demo. If
+  BRN doesn't buy, take it down: it uses his name and number.
+
+`node tools/check-launch.mjs` lists everything still to swap before it goes live.
 
 ## What research verified (Sept 2026)
 
@@ -63,18 +71,15 @@ so their photos and posts were not reviewed.
 9. **Reviews.** With the reviewers' permission, the two Google reviews can be
    quoted word-for-word in the proof block. Never paraphrase or invent them.
 
-## Replacing images
+## Replacing the demo photos
 
-- **Hero:** save a job photo as `assets/img/hero.jpg` (about 1600×2000, 4:5, under
-  250 KB). In `index.html`, change the hero `<img src>` to it, write alt text that
-  describes the job (e.g. "BRN excavator digging a basement on an acreage near
-  Lac La Biche"), and remove `data-confirm` from its `<figure>`.
-- **Recent work:** same process for the four `photo-placeholder.svg` slots
-  (about 1600×1200, under 200 KB each). Replace each caption with what was done
-  and where, e.g. "Shop pad, 40 × 60 ft, Plamondon". Unused slots can be deleted.
-  The grid still works with fewer.
-- Export as JPEG (quality ~75) or WebP. Keep the `width`/`height` attributes in
-  proportion to the photo to avoid layout shift.
+Each photo is referenced by a `srcset` with two or three sizes (e.g.
+`assets/img/demo/gravel-480.jpg` and `-900.jpg`). To swap one for a BRN photo:
+export the same widths (hero: 900/1600/2400; services: 480/900; gallery and
+"Why" photo: 900/1600) as JPEG quality ~75, point the `src`/`srcset` at them,
+rewrite the alt text to describe the real job, and remove `data-confirm`.
+Gallery captions should say what was done and where, e.g. "Shop pad, 40 × 60 ft,
+Plamondon". Unused gallery slots can be deleted; the grid still works with fewer.
 
 ## Quote form
 
@@ -92,9 +97,9 @@ request sent." on success, and on failure tells the visitor to call. The hidden
 
 - [ ] Every `data-confirm` resolved (confirmed → attribute removed; not offered → element deleted)
 - [ ] Real photos in, with alt text and captions
-- [ ] Remove `is-preview` from `<html>` and the `noindex` robots meta
-- [ ] Add `canonical`, `og:url`, `og:image` (1200×630 photo) using the live domain
-- [ ] Add `"url"` and, once confirmed, `"areaServed"` to the JSON-LD
+- [ ] Remove the `noindex` robots meta
+- [ ] Add `canonical` and update `og:url` / `og:image` to the live domain
+- [ ] Add `"url"` to the JSON-LD and confirm `"areaServed"`
 - [ ] Configure `data-endpoint` and send a test request
 - [ ] Re-check the Google rating/review count in the hero and proof block
 - [ ] Add `robots.txt` and `sitemap.xml` with the live domain

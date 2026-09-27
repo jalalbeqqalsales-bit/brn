@@ -157,6 +157,14 @@
     email: form.querySelector('#f-email')
   };
 
+  // A service tile's "Request a quote" link opens the form with that service picked.
+  var typeSelect = form.querySelector('#f-type');
+  document.querySelectorAll('[data-service]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeSelect) typeSelect.value = link.getAttribute('data-service');
+    });
+  });
+
   function preferred() {
     var checked = form.querySelector('input[name="Preferred contact"]:checked');
     return checked ? checked.value : '';

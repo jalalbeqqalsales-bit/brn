@@ -12,13 +12,11 @@ const blockers = [];
 const warnings = [];
 
 for (const m of html.matchAll(/data-confirm="([^"]*)"/g)) {
-  blockers.push(`line ${lineOf(m.index)}: unconfirmed content (${m[1]}). Confirm with BRN and remove the attribute, or delete the element.`);
+  blockers.push(`line ${lineOf(m.index)}: demo content (${m[1]}). Swap in BRN's real details and remove the attribute, or delete the element.`);
 }
-for (const m of html.matchAll(/assets\/img\/(hero-temp|photo-placeholder)\.svg/g)) {
-  blockers.push(`line ${lineOf(m.index)}: temporary image ${m[0]}. Replace with a real BRN photo and write its alt text.`);
-}
-if (/<html[^>]*class="[^"]*\bis-preview\b/.test(html)) {
-  blockers.push('<html> still has class "is-preview". Remove it to hide the preview banner.');
+const demoPhotos = new Set([...html.matchAll(/assets\/img\/demo\/([a-z-]+)-\d+\.jpg/g)].map((m) => m[1]));
+for (const name of demoPhotos) {
+  blockers.push(`demo stock photo "${name}" (assets/img/demo/). Replace with a real BRN photo and update its alt text.`);
 }
 if (/<meta name="robots" content="noindex">/.test(html)) {
   blockers.push('robots noindex meta is still present. Remove it or search engines will skip the site.');

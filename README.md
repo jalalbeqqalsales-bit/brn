@@ -119,10 +119,13 @@ and logs that all accounts are at capacity.
 `/sites` holds static client websites that are independent of the engine
 (not served by it, no build step). Each has its own README.
 
-- `sites/brn-dirtworks/`: BRN Dirtworks LTD, Lac La Biche, AB (preview build;
-  run `node sites/brn-dirtworks/tools/check-launch.mjs` for launch blockers)
-- `sites/brn-dirtworks-original/`: the earlier single-file BRN draft, kept as-is
-  for comparison
+- `sites/brn-dirtworks/`: BRN Dirtworks LTD, Lac La Biche, AB (sales demo;
+  run `node sites/brn-dirtworks/tools/check-launch.mjs` for what to swap before launch)
+- `sites/brn-dirtworks-original/`: the earlier single-file BRN draft, with its
+  images swapped for licensed copies
+
+Both are served by GitHub Pages from this branch (Settings → Pages → Deploy from
+a branch). `.nojekyll` tells Pages to serve the files as-is.
 
 ## Notes & responsible use
 
