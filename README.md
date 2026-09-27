@@ -121,6 +121,8 @@ and logs that all accounts are at capacity.
 
 - `sites/brn-dirtworks/`: BRN Dirtworks LTD, Lac La Biche, AB (preview build;
   run `node sites/brn-dirtworks/tools/check-launch.mjs` for launch blockers)
+- `sites/brn-dirtworks-original/`: the earlier single-file BRN draft, kept as-is
+  for comparison
 
 ## Notes & responsible use
 
